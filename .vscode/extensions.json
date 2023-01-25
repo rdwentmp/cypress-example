@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "mrmlnc.vscode-scss",
+    "yzhang.markdown-all-in-one",
+    "SimonSiefke.prettier-vscode",
+    "sonarsource.sonarlint-vscode",
+    "wmaurer.change-case"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "cypres-example-e2e",
+  "version": "0.0.0",
+  "description": "e2e test for your project",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:record": "cypress --record --key 5d50b928-8cea-4934-a135-29e045686be2",
+    "cypress:report": "npx cypress run --browser electron  --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "test:allure": "npm run cypress:report && npm run report:allure",
+    "cy:run": "npx cypress run --browser chrome",
+    "cy:parallel": "cypress-parallel -s cy:run -t 4 -m false",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rdwentmp/cypress-example"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "community-faker": "^5.5.5",
+    "cypress-wait-until": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/typescript": "^2.0.0",
+    "Faker": "^0.7.2",
+    "allure-commandline": "^2.17.2",
+    "cypress": "^9.5.2",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-fill-command": "^1.0.2",
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "^7.1.0",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.1.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-cypress": "^1.0.4",
+    "typescript": "^4.5.3"
+  }
+}

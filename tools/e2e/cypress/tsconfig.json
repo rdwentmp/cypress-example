@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    "target": "ES2021",
+    "lib": ["ES2021", "dom"],
+    "types": ["cypress", "faker", "cypress-file-upload", "cypress-wait-until"],
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@page-objects/*": ["./support/page-objects/*"],
+      "@helpers/*": ["./support/helpers/*"],
+      "@route/*": ["./support/helpers/*"]
+    }
+  },
+  "include": ["**/*.ts", "plugins/index.js"]
+}

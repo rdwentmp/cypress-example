@@ -1,0 +1,28 @@
+{
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "html.format.wrapLineLength": 0,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "SimonSiefke.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "mrmlnc.vscode-scss"
+  },
+  "[ts]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
+}

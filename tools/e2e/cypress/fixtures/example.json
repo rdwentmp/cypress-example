@@ -1,0 +1,21 @@
+{
+    "productName": "Test001",
+    "projectType": [
+        "Supply",
+        "T&I",
+        "EPCI",
+        "iEPCI"
+    ],
+    "projectStage": [
+        "Pre-FEED",
+        "FEED",
+        "Tender",
+        "Studies",
+        "Project"
+    ],
+    "client": [
+        "ACME",
+        "Codringher & Fenn",
+        "Umbrella Corporation"
+    ]
+}
